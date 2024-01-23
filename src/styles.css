@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Marcellus+SC&family=Montserrat:wght@400;500;600&family=Open+Sans:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+  body{
+    @apply relative font-open-sans bg-[#EEF5FF] text-sm lg:text-base;
+  }
+
+  p{
+    @apply font-montserrat 
+  }
+}
+
+.btn-primary{
+  @apply flex items-center justify-center text-white bg-orange-500 rounded lg:leading-5 gap-2 py-2 lg:py-3 px-4 lg:px-5;
+}
+
+.top-line{
+  @apply relative before:absolute before:top-0 before:left-0 before:h-px before:w-full before:bg-orange-500  before:origin-left before:scale-x-0 hover:before:scale-x-100 before:transition-all before:duration-1000 py-2 px-2.5 lg:px-4;
+}
+
+.bottom-line{
+  @apply relative after:absolute after:bottom-0 after:left-0 after:h-px after:w-full after:bg-orange-500  after:origin-right after:scale-x-0 hover:after:scale-x-100 after:transition-all after:duration-1000
+}
+
+header.sticky{
+  @apply bg-brand-black
+}
+
+/* First Card */
+.card::before,
+.card::after{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: white;
+  transition: 1s;
+  z-index: -1;
+}
+
+
+.card:hover::before{
+  transform: rotate(20deg);
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card:hover::after{
+  transform: rotate(10deg);
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card:hover .img-Box{
+  bottom: 80px;
+}
+
+
+.expertise-card{
+  @apply before:absolute before:h-3/5 before:w-3 before:-left-2 before:top-1/2 before:-translate-y-1/2 before:rounded-md before:bg-red-700
+}
+
+
+.accordion-item-body {
+  transition: max-height 0.3s ease-out;
+}
+
+.content p{
+  @apply text-sm/4
+}
+
+
+.icon:before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 2px;
+  background-color: white;
+  border-radius: 20px;
+  pointer-events: all;
+  transition: all 0.3s ease-in-out;
+}
+
+.icon:after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 10px;
+  background-color: white;
+  border-radius: 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+/* JavaScript accordion */
+.accordion-item-header.active > .icon::before {
+  transform: rotate(180deg);
+}
+
+.accordion-item-header.active > .icon::after {
+  transform: rotate(90deg);
+}
+
+
+/* brands */
+.swiper-animate-box-brand{
+  animation: scroll-brand 15s linear infinite;
+}
+
+.swiper-animate-box-brand:hover{
+  animation-play-state: paused;
+}
+
+@keyframes scroll-brand {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-215px * 5));
+  }  
+}
+
+/* image */
+
+.autoScroll-image-parent{
+  animation: scroll-image 20s linear infinite;
+}
+
+.autoScroll-image-parent:hover{
+  animation-play-state: paused;
+}
+
+@keyframes scroll-image {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-315px * 5));
+  }  
+}
+/* Keshlash */
+
+/* 1 fontlarni keshla */
