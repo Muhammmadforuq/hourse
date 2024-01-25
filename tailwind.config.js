@@ -14,10 +14,20 @@ module.exports = {
       colors:{
         brand:{
           black:"#151415",
-          lightBlack:"#404040"
+          lightBlack:"#404040",
+          blue:'#2f363e',
+          gray:'#888'
           
         }
+      },
+      backgroundImage:{
+        timelineBack:'url("../image/expert-1.jpg")'
+      },
+      animation: {
+        moveline: 'moveline 10s linear forwards',
+        movedown: 'movedown 1s linear forwards'
       }
+
     },
   },
   plugins: [],

@@ -8,11 +8,11 @@
   <title>Hourse</title>
 </head>
 <body>
-  <header class="absolute inset-x-0 top-0 bg-transparent text-white z-20">
+  <header class="fixed inset-x-0 top-0 bg-transparent text-white z-20">
     <nav class="flex justify-between items-center font-semibold xl:text-lg/6 p-4">
       <!--  logo-->
       <a href="#" class="group flex items-center space-x-3">
-        <div class="w-16 aspect-square">
+        <div class="w-14 md:w-16 aspect-square">
           <img class="w-full h-full object-cover rounded-full" src="./image/logo.png" alt="Logo">
         </div>
         <span class="text-sm/4 group-hover:text-orange-400 transition-colors">José Antonia Olea</span>
@@ -22,6 +22,7 @@
         <a href="#" class="top-line bottom-line">Home</a>
         <a href="#" class="top-line bottom-line">About</a>
         <a href="#" class="top-line bottom-line">Experience</a>
+        <a href="#" class="top-line bottom-line">Achievements</a>
         <a href="#" class="top-line bottom-line">Servises</a>
         <a href="#" class="top-line bottom-line">Contact</a>
       </div>
@@ -36,7 +37,7 @@
         <div class="flex items-center justify-between">
           <!--  logo-->
           <a href="#" class="group flex items-center space-x-3">
-            <div class="w-16">
+            <div class="w-14">
               <img class="w-full h-full object-cover rounded-full" src="./image/logo.png" alt="Logo">
             </div>
             <span class="text-sm/4 group-hover:text-orange-400 transition-colors">José Antonia Olea</span>
@@ -61,16 +62,19 @@
   </header>
   <main>
     <!-- hero -->
-    <section class="relative py-36 lg:py-44 xl:py-52 2xl:py-72 text-white">
+    <section class="hero-overlay text-white">
       <div data-aos="fade-up" data-aos-duration="2500"
        class="relative max-w-base mx-auto space-y-3 lg:space-y-5 px-4 z-10">
+       <!-- hero title -->
         <h1 class="font-bold font-marcellus text-2xl/7 md:text-4xl lg:text-5xl xl:text-7xl">
           José Antonia Olea 
           <span class="block text-orange-600">Equitación de trabajo</span>
         </h1>
+        <!-- hero text -->
         <p class="max-w-xl xl:max-w-3xl">
           From his humble beginnings at the age of 15 in his family's riding school, José Antonio has crafted a robust and multifaceted career. His involvement in horse training on a livestock farm dedicated to horse breeding marked the beginning of a journey that would lead him to the pinnacle of the equestrian world.
         </p>
+        <!-- contact -->
         <div class="flex items-center space-x-4">
           <button type="button" class="btn-primary group">
             <span>Contact Us</span>
@@ -81,319 +85,229 @@
           <a href="tel:+666465744" class="font-medium xl:text-xl/6 hover:text-amber-600 transition-colors">+ 666 46 57 44 </a>
         </div>
       </div>
+      <!-- hero background image -->
       <div class="absolute top-0 left-0 w-full h-full z-0">
-        <img class="w-full h-full object-cover" src="./image/bg-2.jpg" alt="">
+        <img class="w-full h-full object-cover" src="./image/hero-bg.jpg" alt="">
       </div>
-      <div class="absolute inset-0 bg-black/50"></div>
     </section>
-    <!-- About -->
-    <section class="max-w-base mx-auto grid grid-cols-2 items-center mt-28 gap-6 px-4">
-      <div class="relative z-10 pl-10">
-        <div data-aos="fade-right" data-aos-duration="2500">
-          <div class="group card relative max-w-sm xl:max-w-lg aspect-square w-full cursor-pointer shadow-lg bg-white">
-          <div class="img-Box absolute inset-2.5 bg-white z-10 duration-1000">
-            <img class="absolute inset-0 w-full h-full object-cover" src="./image/2569955813816851122_11389968172.jpg" alt="">
-          </div>
-          <p class="absolute inset-x-2.5 bottom-2.5 h-14 font-marcellus text-center group-hover:text-amber-600 text-brand-black text-lg uppercase">José Antonia Olea</p>
-          </div>
+    
+    <!-- About  -->
+    <section data-aos="fade-up" data-aos-duration="2500" class="max-w-base mx-auto mt-8 md:mt-20 xl:mt-28 px-4">
+      <div class="grid md:grid-cols-2 items-center gap-5 md:gap-14 lg:gap-20 xl:gap-6">
+        <div class="relative z-10 md:pl-6 xl:pl-10">
+          <div class="group card">
+            <div class="img-Box absolute inset-2.5 bg-white z-10 duration-1000">
+              <img class="absolute inset-0 w-full h-full object-cover" src="./image/expert-6.jpg" alt="">
+            </div>
+            <p class="absolute inset-x-2.5 bottom-2.5 h-9 lg:h-14 font-marcellus text-center lg:text-lg text-brand-black group-hover:text-amber-600 uppercase">José Antonia Olea</p>
+            </div>
+        </div>
+        <div class="arrow-shape md:max-w-xl bg-white shadow-lg rounded-lg md:rounded-3xl overflow-hidden space-y-3 lg:space-y-5 p-5 md:p-7 xl:py-10 xl:px-12">
+            <div class="flex items-center gap-2">
+              <p class="text-amber-600 font-medium uppercase"> about me</p>
+              <span class="w-16 h-0.5 bg-amber-600"></span>
+            </div>
+            <h3>We have more than 20+ years riding experience</h3>
+            <p>
+              Born on November 18, 1976, in Madrid and currently residing in Olivares, Sevilla, José Antonio Olea Rodríguez has emerged as a prominent figure in the world of equestrianism and horse training. With over three decades of dedication and experience
+            </p>
+            <a href="#" class="btn-primary group">
+              <span>read more</span>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 group-hover:translate-x-1 transition-transform">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+              </svg>            
+            </a>
         </div>
       </div>
-      <div data-aos="fade-left" data-aos-duration="3000" class="max-w-xl space-y-5">
-          <div class="flex items-center gap-2">
-            <p class="text-amber-600 font-medium uppercase"> about us</p>
-            <span class="w-16 h-0.5 bg-amber-600"></span>
-          </div>
-          <h2 class="text-5xl text-brand-black">We have more than 20+ years riding experience</h2>
-          <p class="font-montserrat">
-            Born on November 18, 1976, in Madrid and currently residing in Olivares, Sevilla, José Antonio Olea Rodríguez has emerged as a prominent figure in the world of equestrianism and horse training. With over three decades of dedication and experience, he is recognized as one of the foremost horse trainers on both the national and international stages.
-          </p>
-          <button type="button" class="btn-primary group">
-            <span>About Us</span>
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 group-hover:translate-x-1 transition-transform">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
-            </svg>            
-          </button>
-      </div>
-     </section>
-    <!-- PROFESSIONAL EXPERIENCE-->
-    <section class="overflow-hidden">
-      <section class="max-w-base mx-auto grid grid-cols-2 items-center mt-40 gap-6 px-4">
-        <div data-aos="fade-right" data-aos-duration="2500" class="max-w-xl space-y-5">
+    </section>
+
+    <!-- PROFESSIONAL EXPERIENCE -->
+    <section data-aos="fade-up" data-aos-duration="2500" class="max-w-base mx-auto mt-8 md:mt-20 xl:mt-40 p-4">
+      <div class="grid md:grid-cols-2 items-center gap-7 md:gap-14 lg:gap-20 xl:gap-6">
+        <div class="arrow-shape md:max-w-xl bg-white shadow-lg rounded-lg md:rounded-3xl overflow-hidden space-y-3 lg:space-y-5 p-5 md:p-7 xl:py-10 xl:px-12">
           <div class="flex items-center gap-2">
             <p class="text-amber-600 font-medium uppercase">Professional Experience</p>
             <span class="w-16 h-0.5 bg-amber-600"></span>
           </div>
-          <h2 class="text-5xl text-brand-black">20+ Years of Professional Equestrian Experience</h2>
-          <p class="font-montserrat">
+          <h3>20+ Years of Professional Equestrian Experience</h3>
+          <p>
             José Antonio is not only a consummate rider but also a sports technical specialist in equestrianism and a territorial judge in working equitation. His education in Administrative Vocational Training and his innate ability to understand horses have granted him a comprehensive approach to equine training and horse training.
-            <br> <br>
-            He has participated in various competitions such as Western dressage, classical dressage, cutting, morphological contests, high school, and working equitation, always standing out for his skill and unique connection with horses.
 
           </p>
           <button type="button" class="btn-primary group">
-            <span>About Us</span>
+            <span>Read More</span>
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 group-hover:translate-x-1 transition-transform">
               <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
             </svg>            
           </button>
         </div>
-        <div data-aos="fade-left" data-aos-duration="3000" class="grid grid-cols-2 place-content-between gap-5">
-          <div class="group max-h-72 h-full w-full overflow-hidden cursor-pointer">
-            <img class="h-full w-full object-cover group-hover:scale-110 transition-transform rounded-md" src="./image/expert-1.jpg" alt="expert 1">
+        <div class="order-first md:order-none grid grid-cols-2 gap-3 lg:gap-5">
+          <div class="group max-h-48 md:max-h-60 xl:max-h-72 h-full w-full overflow-hidden cursor-pointer rounded-md">
+            <img class="h-full w-full object-cover group-hover:scale-110 transition-transform" src="./image/expert-1.jpg" alt="expert 1">
           </div>
-          <div class="group w-60 flex aspect-square overflow-hidden cursor-pointer mt-auto">
+          <div class="group max-h-32 md:max-h-40 xl:max-h-60 flex aspect-square overflow-hidden cursor-pointer rounded-md mt-auto">
             <div class="h-full w-full">
-              <img class="w-full h-full object-cover rounded-md group-hover:scale-110 transition-transform" src="./image/expert-2.jpg" alt="expert 2">
+              <img class="w-full h-full object-cover group-hover:scale-110 transition-transform" src="./image/expert-2.jpg" alt="expert 2">
             </div>
           </div>
-          <div class="group w-60 flex aspect-square overflow-hidden cursor-pointer ml-auto">
+          <div class="group max-h-32 md:max-h-40 xl:max-h-60 flex aspect-square overflow-hidden cursor-pointer rounded-md ml-auto">
             <div class="h-full w-full">
-              <img class="w-full h-full object-cover rounded-md group-hover:scale-110 transition-transform" src="./image/expert-3.jpg" alt="expert 3">
+              <img class="w-full h-full object-cover group-hover:scale-110 transition-transform" src="./image/expert-3.jpg" alt="expert 3">
             </div>
           </div>
-          <div class="group max-h-72 h-full w-full overflow-hidden cursor-pointer">
-            <img class="h-full w-full object-cover group-hover:scale-110 transition-transform rounded-md" src="./image/expert-4.jpg" alt="expert 4">
+          <div class="group max-h-48 md:max-h-60 xl:max-h-72 h-full w-full overflow-hidden cursor-pointer rounded-md">
+            <img class="h-full w-full object-cover group-hover:scale-110 transition-transform" src="./image/expert-5.jpg" alt="expert 4">
           </div>
         </div>
-      </section>
-    </section> 
-   <!-- Achievements and Recognitions-->
-    <section class="max-w-base mx-auto mt-28 gap-6 px-4">
-      <div data-aos="fade-up" data-aos-duration="2500" class="space-y-4 max-w-4xl mx-auto">
+      </div> 
+    </section>
+
+     <!-- Achievements and Recognitions timeline -->
+     <section>
+       <div data-aos="fade-up" data-aos-duration="2500" class="max-w-4xl mx-auto text-center space-y-4 mt-8 md:mt-20 xl:mt-28 px-4">
         <div class="flex items-center justify-center gap-2">
           <p class="text-amber-600 font-medium uppercase">Achievements and Recognitions</p>
           <span class="w-16 h-0.5 bg-amber-600"></span>
         </div>
-        <h2 class="font-inter text-4xl text-brand-black text-center">
+        <h3>
           The list of José Antonio's achievements and trophies is extensive, bearing witness to his excellence in horse training.
-        </h2>
-      </div>
+        </h3>
+       </div>
       
-      <div class="grid grid-cols-2 gap-4 px-8">
-        <div data-aos="zoom-in" data-aos-duration="2500">
-          <div class="content text-white bg-brand-lightBlack rounded-md space-y-4 p-10 mt-10">
-            <!-- 1 -->
-            <div class="accordion-item border-b border-white">
-              <button type="button" class="accordion-item-header w-full flex justify-between items-center gap-4 pb-3 pr-3">
-                <h3 class="text-xl/6">2002 - 2004</h3>
-                <span class="icon relative w-7 flex shrink-0 justify-center items-center aspect-square rounded-full border border-amber-600 transition-colors"></span>
-              </button>
-              <div class="accordion-item-body max-h-0 overflow-hidden">
-                <div class="accordion-item-body-content w-4/5 pb-3 pl-5">
-                  <p>
-                    - Participation in Sicab in the ANCCE Cup of Western Dressage (2nd and 3rd place with Jamaicana).
-                  </p>
-                </div>
-              </div>
+       <!-- timeline -->
+      <div class="timeline-bg bg-timelineBack bg-no-repeat bg-fixed bg-cover relative py-14 lg:py-20 mt-10">
+        <div class="relative timeline-items z-10">
+          <!-- 2004 -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">2004</div>
+            <div class="timeline-content space-y-2">
+              <p>
+                - Participation in Sicab in the ANCCE Cup of Western Dressage (2nd and 3rd place with Jamaicana).
+              </p>
             </div>
-            <!-- 2 -->
-            <div class="accordion-item border-b border-white">
-              <button type="button" class="accordion-item-header w-full flex justify-between items-center gap-4 pb-3 pr-3">
-                <h3 class="text-xl/6">2005</h3>
-                <span class="icon relative w-7 flex shrink-0 justify-center items-center aspect-square rounded-full border border-amber-600 transition-colors"></span>
-              </button>
-              <div class="accordion-item-body max-h-0 overflow-hidden">
-                <div class="accordion-item-body-content w-4/5 pb-3 pl-5">
-                  <p> - 5th place in Sicab with Amanzor</p>
-                </div>
-              </div>
-            </div>
-  
-            <!-- 3 -->
-            <div class="accordion-item border-b border-white">
-              <button type="button" class="accordion-item-header w-full flex justify-between items-center gap-4 pb-3 pr-3">
-                <h3 class="text-xl/6">2007</h3>
-                <span class="icon relative w-7 flex shrink-0 justify-center items-center aspect-square rounded-full border border-amber-600 transition-colors"></span>
-              </button>
-              <div class="accordion-item-body max-h-0 overflow-hidden">
-                <div class="accordion-item-body-content w-4/5 pb-3 pl-5">
-                  <p> - 2nd place in Sicab with Guiñolero.</p>
-                </div>
-              </div>
-            </div>
-  
-            <!-- 4 -->
-            <div class="accordion-item border-b border-white">
-              <button type="button" class="accordion-item-header w-full flex justify-between items-center gap-4 pb-3 pr-3">
-                <h3 class="text-xl/6">2009</h3>
-                <span class="icon relative w-7 flex shrink-0 justify-center items-center aspect-square rounded-full border border-amber-600 transition-colors"></span>
-              </button>
-              <div class="accordion-item-body max-h-0 overflow-hidden">
-                <div class="accordion-item-body-content w-4/5 pb-3 pl-5">
-                  <p> - Champion and 2nd place in Sicab</p>
-                </div>
-              </div>
-            </div>
-  
-            <!-- 5 -->
-            <div class="accordion-item border-b border-white">
-              <button type="button" class="accordion-item-header w-full flex justify-between items-center gap-4 pb-3 pr-3">
-                <h3 class="text-xl/6">2011</h3>
-                <span class="icon relative w-7 flex shrink-0 justify-center items-center aspect-square rounded-full border border-amber-600 transition-colors"></span>
-              </button>
-              <div class="accordion-item-body max-h-0 overflow-hidden">
-                <div class="accordion-item-body-content w-4/5 pb-3 pl-5">
-                  <p> - Champion and 2nd place in Sicab</p>
-                </div>
-              </div>
-            </div>
-  
-            <!-- 6 -->
-            <div class="accordion-item border-b border-white">
-              <button type="button" class="accordion-item-header w-full flex justify-between items-center gap-4 pb-3 pr-3">
-                <h3 class="text-xl/6">2018</h3>
-                <span class="icon relative w-7 flex shrink-0 justify-center items-center aspect-square rounded-full border border-amber-600 transition-colors"></span>
-              </button>
-              <div class="accordion-item-body max-h-0 overflow-hidden">
-                <div class="accordion-item-body-content w-4/5 space-y-2 pb-3 pl-5">
-                  <p>
-                    - ANCCE Cup Champion with Leon AP.
-                  </p>
-                  <p>
-                    - 15th in the World Championship (Best-placed among Spanish riders).
-                  </p>
-                </div>
-              </div>
-            </div>
-  
-  
           </div>
-        </div>
-        <div data-aos="zoom-in" data-aos-duration="3000">
-          <div class="content text-white bg-brand-lightBlack rounded-md space-y-4 p-10 mt-10">
-            <!-- 7 -->
-            <div class="accordion-item border-b border-white">
-              <button type="button" class="accordion-item-header w-full flex justify-between items-center gap-4 pb-3 pr-3">
-                <h3 class="text-xl/6">2019</h3>
-                <span class="icon relative w-7 flex shrink-0 justify-center items-center aspect-square rounded-full border border-amber-600 transition-colors"></span>
-              </button>
-              <div class="accordion-item-body max-h-0 overflow-hidden">
-                <div class="accordion-item-body-content w-4/5 space-y-2 pb-3 pl-5">
-                  <p> - Spanish Champion with Trafalgar del Jaral.</p>
-                <p> - Copa de España Champion with Embajador 19.79%.</p>
-                <p> - 5th in the Portugal Cup.</p>
-                <p> - 5th in an international competition in Nantes (France).</p>
-                <p> - Andalusian Champion in the intermediate category with Kaliber.</p>
-                <p> - Andalusian Champion in trained horses with Turronero.</p>
-                </div>
-              </div>
+          <!-- 2005 -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">2005</div>
+            <div class="timeline-content space-y-2">
+              <p>- 5th place in Sicab with Amanzor.</p>
             </div>
-            <!-- 8 -->
-            <div class="accordion-item border-b border-white">
-              <button type="button" class="accordion-item-header w-full flex justify-between items-center gap-4 pb-3 pr-3">
-                <h3 class="text-xl/6">2020</h3>
-                <span class="icon relative w-7 flex shrink-0 justify-center items-center aspect-square rounded-full border border-amber-600 transition-colors"></span>
-              </button>
-              <div class="accordion-item-body max-h-0 overflow-hidden">
-                <div class="accordion-item-body-content w-4/5 space-y-2 pb-3 pl-5">
-                  <p>- ANCCE Cup Champion in the novice category with Ilustre AP.</p>
-                  <p>- Champion in trained horses with Bello XXIII.</p>
-                  <p>- Andalusian Champion in the novice category with Ilustre AP and trained horses with Trafalgar del Jaral. </p>
-                  <p>- Spanish Runner-up with Trafalgar del Jaral.</p>
-                  <p>- Copa de España Champion with Nomada de Torres.</p>
-                </div>
-              </div>
+          </div>
+          <!-- 2007 -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">2007</div>
+            <div class="timeline-content space-y-2">
+              <p>- 2nd place in Sicab with Guiñolero.</p>
             </div>
-            <!-- 9 -->
-            <div class="accordion-item border-b border-white">
-              <button type="button" class="accordion-item-header w-full flex justify-between items-center gap-4 pb-3 pr-3">
-                <h3 class="text-xl/6">2021</h3>
-                <span class="icon relative w-7 flex shrink-0 justify-center items-center aspect-square rounded-full border border-amber-600 transition-colors"></span>
-              </button>
-              <div class="accordion-item-body max-h-0 overflow-hidden">
-                <div class="accordion-item-body-content w-4/5 space-y-2 pb-3 pl-5">
-                  <p>- Copa de España Champion in the novice category with Cacique.</p>
-                  <p>- 3rd place in the Spanish Championship with Trafalgar del Jaral.</p>
-                  <p>- Andalusian Champion in trained horses with Trafalgar del Jaral.</p>
-                  <p>- Andalusian Champion in the novice category with Cacique.</p>
-                </div>
-              </div>
+          </div>
+          <!-- 2009 -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">2009</div>
+            <div class="timeline-content space-y-2">
+              <p>- Champion and 2nd place in Sicab.</p>
             </div>
-  
-            <!-- 10 -->
-            <div class="accordion-item border-b border-white">
-              <button type="button" class="accordion-item-header w-full flex justify-between items-center gap-4 pb-3 pr-3">
-                <h3 class="text-xl/6">2022</h3>
-                <span class="icon relative w-7 flex shrink-0 justify-center items-center aspect-square rounded-full border border-amber-600 transition-colors"></span>
-              </button>
-              <div class="accordion-item-body max-h-0 overflow-hidden">
-                <div class="accordion-item-body-content w-4/5 space-y-2 pb-3 pl-5">
-                  <p>- Spanish Runner-up with Trafalgar del Jaral.</p>
-                  <p>- 8th place individually in the World Championship with Trafalgar del Jaral (Best-placed among the Spanish Team).</p>
-                  <p>- Silver Medal by Teams in the World Championship with Trafalgar del Jaral.</p>
-                  <p>- Andalusian Champion with Trafalgar del Jaral in trained horses.</p>
-                  <p>- Champion in the novice category with Cacique.</p>
-                  <p>- 2nd place in the intermediate category with Embajador 19.79%.</p>
-                  <p>- Silver Medal ANCCE Cup with Tenebron.</p>
-                  <p>- 2nd Spanish Championship in trained horses with Trafalgar del Jaral.</p>
-                  <p>- 2nd Copa de España in the novice category with Ordenado D'arcos.</p>
-                </div>
-              </div>
+          </div>
+          <!-- 2011 -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">2011</div>
+            <div class="timeline-content space-y-2">
+              <p>- 2nd and 3rd place in Sicab with Barnacle and Champion. </p>
             </div>
-            <!--11 -->
-            <div class="accordion-item border-b border-white">
-              <button type="button" class="accordion-item-header w-full flex justify-between items-center gap-4 pb-3 pr-3">
-                <h3 class="text-xl/6">2023</h3>
-                <span class="icon relative w-7 flex shrink-0 justify-center items-center aspect-square rounded-full border border-amber-600 transition-colors"></span>
-              </button>
-              <div class="accordion-item-body max-h-0 overflow-hidden">
-                <div class="accordion-item-body-content w-4/5 space-y-2 pb-3 pl-5">
-                  <p>- 1st PRE World Championship.</p>
-                  <p>- Andalusian Champion with Trafalgar del Jaral in trained horses.</p>
-                  <p>- Champion in the novice category with Cacique.</p>
-                  <p>- 2nd place in the intermediate category with Embajador 19.79%.</p>
-                  <p>- 1st Spanish Championship in trained horses with Trafalgar del Jaral.</p>
-                  <p>- 2nd Copa de España in the novice category with Ordenado D'arcos.</p>       
-                </div>
-              </div>
+          </div>
+          <!-- 2018 -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">2018</div>
+            <div class="timeline-content space-y-2">
+              <p>- ANCCE Cup Champion with Leon AP.</p>
+              <p>- 15th in the World Championship (Best-placed among Spanish riders).</p>
             </div>
-            <!-- 12 -->
-            <div class="accordion-item border-b border-white">
-              <button type="button" class="accordion-item-header w-full flex justify-between items-center gap-4 pb-3 pr-3">
-                <h3 class="text-xl/6">2024</h3>
-                <span class="icon relative w-7 flex shrink-0 justify-center items-center aspect-square rounded-full border border-amber-600 transition-colors"></span>
-              </button>
-              <div class="accordion-item-body max-h-0 overflow-hidden">
-                <div class="accordion-item-body-content w-4/5 space-y-2 pb-3 pl-5">
-                  <p>- Spanish Runner-up with Trafalgar del Jaral.</p>
-                  <p>- 8th place individually in the World Championship with Trafalgar del Jaral (Best-placed among the Spanish Team).</p>
-                  <p>- Silver Medal by Teams in the World Championship with Trafalgar del Jaral.</p>
-                  <p>- Andalusian Champion with Trafalgar del Jaral in trained horses.</p>
-                  <p>- Champion in the novice category with Cacique.</p>
-                  <p>- 2nd place in the intermediate category with Embajador 19.79%.</p>
-                  <p>- Silver Medal ANCCE Cup with Tenebron.</p>
-                  <p>- 2nd Spanish Championship in trained horses with Trafalgar del Jaral.</p>
-                  <p>- 2nd Copa de España in the novice category with Ordenado D'arcos.</p>
-                  <p>- 1st PRE World Championship.</p>
-                  <p>- ANCCE Cup Champion in the trained horses category with Tenebron.</p>
-                </div>
-              </div>
+          </div>
+          <!-- 2019 -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">2019</div>
+            <div class="timeline-content space-y-2">
+              <p>- Andalusian Champion in the intermediate category with Kaliber.</p>
+              <p>- Andalusian Champion in trained horses with Turronero.</p>
+            </div>
+          </div>
+          <!-- 2020 -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">2020</div>
+            <div class="timeline-content space-y-2">
+              <p>- ANCCE Cup Champion in the novice category with Ilustre AP.</p>
+              <p>- Copa de España Champion with Nomada de Torres.</p>
+            </div>
+          </div>
+          <!-- 2021 -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">2021</div>
+            <div class="timeline-content space-y-2">
+              <p>- Copa de España Champion in the novice category with Cacique.</p>
+              <p>- Andalusian Champion in the novice category with Cacique.</p>
+            </div>
+          </div>
+          <!-- 2022 -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">2022</div>
+            <div class="timeline-content space-y-2">
+              <p>- Andalusian Champion with Trafalgar del Jaral in trained horses.</p>
+              <p>- 2nd Copa de España in the novice category with Ordenado D'arcos.</p>
+            </div>
+          </div>
+          <!-- 2023 -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">2023</div>
+            <div class="timeline-content space-y-2">
+              <p>- 1st PRE World Championship.</p>
+              <p>- 1st Spanish Championship in trained horses with Trafalgar del Jaral.</p>
+            </div>
+          </div>
+          <!-- 2024 -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">2024</div>
+            <div class="timeline-content space-y-2">
+              <p>- Spanish Runner-up with Trafalgar del Jaral.</p>
+              <p>- 1st PRE World Championship.</p>
             </div>
           </div>
         </div>
       </div>
+    
     </section>
-    <!-- Contributions and Teaching-->
-    <section class="max-w-base mx-auto mt-28 px-4">
-      <div data-aos="fade-up-right" class="space-y-4">
+
+    <!-- Contributions and Teaching  -->
+    <section data-aos="fade-up" data-aos-duration="2500" class="relative max-w-base mx-auto mt-8 md:mt-20 xl:mt-28 px-4">
+      <div class="space-y-4">
         <div class="flex items-center gap-2">
           <p class="text-amber-600 font-medium uppercase">Contributions and Teaching</p>
           <span class="w-16 h-0.5 bg-amber-600"></span>
         </div>
-        <h2 class="font-inter text-4xl text-brand-black">
+        <h3>
           "José Antonio: A Versatile Contribution <br> to Equestrian Education"
-        </h2>
+        </h3>
       </div>
-      <div class="grid grid-cols-3 items-center gap-6 mt-10">
-        <div data-aos="zoom-in" data-aos-duration="2500" class="group relative cursor-pointer px-12 pb-5">
+      <div class="grid md:grid-cols-3 items-center text-white gap-6 md:gap-3 lg:gap-6 mt-10">
+        <div class="group relative max-w-md md:max-w-full mx-auto cursor-pointer px-4 lg:px-7 xl:px-12 pb-5">
           <div class="relative w-full aspect-square overflow-hidden z-10">
-            <img src="./image//2676612144228090853_11389968172.jpg" alt="">
-            <div class="absolute bottom-0 translate-y-full group-hover:translate-y-0 bg-orange-500 py-8 left-0 w-full transition-transform duration-1000 z-10">
+            <img src="./image/expert-1.jpg" alt="">
+            <div class="absolute bottom-0 xl:translate-y-full xl:group-hover:translate-y-0 bg-orange-500 left-0 w-full transition-transform duration-300 z-10 py-3 lg:py-6 xl:py-8">
               <!-- social media -->
-              <div class="flex items-start justify-center text-white gap-5">
+              <div class="flex items-start justify-center gap-2 xl:gap-5">
                 <!-- instagram -->
                 <a href="https://www.instagram.com/joseantonioolearodriguez/?hl=en" class="hover:scale-110 transition-transform">
-                  <svg width="26" height="26" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#a)"><path d="M13 17.063a4.062 4.062 0 1 0 0-8.125 4.062 4.062 0 0 0 0 8.124Z" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10"/><path d="M17.875 3.25h-9.75A4.875 4.875 0 0 0 3.25 8.125v9.75a4.875 4.875 0 0 0 4.875 4.875h9.75a4.875 4.875 0 0 0 4.875-4.875v-9.75a4.875 4.875 0 0 0-4.875-4.875Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M18.281 8.938a1.219 1.219 0 1 0 0-2.438 1.219 1.219 0 0 0 0 2.438Z" fill="currentColor"/></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h26v26H0z"/></clipPath></defs></svg>
+                  <svg class="w-6 aspect-square" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#a)"><path d="M13 17.063a4.062 4.062 0 1 0 0-8.125 4.062 4.062 0 0 0 0 8.124Z" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10"/><path d="M17.875 3.25h-9.75A4.875 4.875 0 0 0 3.25 8.125v9.75a4.875 4.875 0 0 0 4.875 4.875h9.75a4.875 4.875 0 0 0 4.875-4.875v-9.75a4.875 4.875 0 0 0-4.875-4.875Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M18.281 8.938a1.219 1.219 0 1 0 0-2.438 1.219 1.219 0 0 0 0 2.438Z" fill="currentColor"/></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h26v26H0z"/></clipPath></defs></svg>
                 </a>
                 <!-- facebook -->
                 <a href="#" class="hover:scale-110 transition-transform">
@@ -415,21 +329,21 @@
               </div>
             </div>
           </div>
-          <div class="relative text-center text-white space-y-2 mt-5 z-10">
-            <h3 class="text-xl font-marcellus">José Antonio</h3>
+          <div class="relative text-center space-y-1 lg:space-y-2 mt-3 lg:mt-4 z-10">
+            <h4 class="text-base/5 lg:text-xl/6 font-marcellus pt-1">José Antonio</h4>
             <p>Professional Trainer</p>
           </div>
           <div class="absolute bottom-0 left-0 h-1/3 w-full bg-brand-lightBlack z-0"></div>
         </div>
-        <div data-aos="zoom-in" data-aos-duration="2700" class="group relative cursor-pointer px-12 pb-5">
+        <div class="group relative max-w-md md:max-w-full mx-auto cursor-pointer px-4 lg:px-7 xl:px-12 pb-5">
           <div class="relative w-full aspect-square overflow-hidden z-10">
-            <img src="./image//2676612144228090853_11389968172.jpg" alt="">
-            <div class="absolute bottom-0 translate-y-full group-hover:translate-y-0 bg-orange-500 py-8 left-0 w-full transition-transform duration-1000 z-10">
+            <img src="./image/expert-4.jpg" alt="">
+            <div class="absolute bottom-0 xl:translate-y-full xl:group-hover:translate-y-0 bg-orange-500 left-0 w-full transition-transform duration-300 z-10 py-3 lg:py-6 xl:py-8">
               <!-- social media -->
-              <div class="flex items-start justify-center text-white gap-5">
+              <div class="flex items-start justify-center gap-2 xl:gap-5">
                 <!-- instagram -->
                 <a href="https://www.instagram.com/joseantonioolearodriguez/?hl=en" class="hover:scale-110 transition-transform">
-                  <svg width="26" height="26" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#a)"><path d="M13 17.063a4.062 4.062 0 1 0 0-8.125 4.062 4.062 0 0 0 0 8.124Z" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10"/><path d="M17.875 3.25h-9.75A4.875 4.875 0 0 0 3.25 8.125v9.75a4.875 4.875 0 0 0 4.875 4.875h9.75a4.875 4.875 0 0 0 4.875-4.875v-9.75a4.875 4.875 0 0 0-4.875-4.875Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M18.281 8.938a1.219 1.219 0 1 0 0-2.438 1.219 1.219 0 0 0 0 2.438Z" fill="currentColor"/></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h26v26H0z"/></clipPath></defs></svg>
+                  <svg class="w-6 aspect-square" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#a)"><path d="M13 17.063a4.062 4.062 0 1 0 0-8.125 4.062 4.062 0 0 0 0 8.124Z" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10"/><path d="M17.875 3.25h-9.75A4.875 4.875 0 0 0 3.25 8.125v9.75a4.875 4.875 0 0 0 4.875 4.875h9.75a4.875 4.875 0 0 0 4.875-4.875v-9.75a4.875 4.875 0 0 0-4.875-4.875Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M18.281 8.938a1.219 1.219 0 1 0 0-2.438 1.219 1.219 0 0 0 0 2.438Z" fill="currentColor"/></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h26v26H0z"/></clipPath></defs></svg>
                 </a>
                 <!-- facebook -->
                 <a href="#" class="hover:scale-110 transition-transform">
@@ -451,21 +365,21 @@
               </div>
             </div>
           </div>
-          <div class="relative text-center text-white space-y-2 mt-5 z-10">
-            <h3 class="text-xl font-marcellus">José Antonio</h3>
+          <div class="relative text-center space-y-1 lg:space-y-2 mt-3 lg:mt-4 z-10">
+            <h4 class="text-base/5 lg:text-xl/6 font-marcellus pt-1">José Antonio</h4>
             <p>Professional Trainer</p>
           </div>
           <div class="absolute bottom-0 left-0 h-1/3 w-full bg-brand-lightBlack z-0"></div>
         </div>
-        <div data-aos="zoom-in" data-aos-duration="3000" class="group relative cursor-pointer px-12 pb-5">
+        <div class="group relative max-w-md md:max-w-full mx-auto cursor-pointer px-4 lg:px-7 xl:px-12 pb-5">
           <div class="relative w-full aspect-square overflow-hidden z-10">
-            <img src="./image//2676612144228090853_11389968172.jpg" alt="">
-            <div class="absolute bottom-0 translate-y-full group-hover:translate-y-0 bg-orange-500 py-8 left-0 w-full transition-transform duration-1000 z-10">
+            <img src="./image/expert-6.jpg" alt="">
+            <div class="absolute bottom-0 xl:translate-y-full xl:group-hover:translate-y-0 bg-orange-500 left-0 w-full transition-transform duration-300 z-10 py-3 lg:py-6 xl:py-8">
               <!-- social media -->
-              <div class="flex items-start justify-center text-white gap-5">
+              <div class="flex items-start justify-center gap-2 xl:gap-5">
                 <!-- instagram -->
                 <a href="https://www.instagram.com/joseantonioolearodriguez/?hl=en" class="hover:scale-110 transition-transform">
-                  <svg width="26" height="26" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#a)"><path d="M13 17.063a4.062 4.062 0 1 0 0-8.125 4.062 4.062 0 0 0 0 8.124Z" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10"/><path d="M17.875 3.25h-9.75A4.875 4.875 0 0 0 3.25 8.125v9.75a4.875 4.875 0 0 0 4.875 4.875h9.75a4.875 4.875 0 0 0 4.875-4.875v-9.75a4.875 4.875 0 0 0-4.875-4.875Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M18.281 8.938a1.219 1.219 0 1 0 0-2.438 1.219 1.219 0 0 0 0 2.438Z" fill="currentColor"/></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h26v26H0z"/></clipPath></defs></svg>
+                  <svg class="w-6 aspect-square" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#a)"><path d="M13 17.063a4.062 4.062 0 1 0 0-8.125 4.062 4.062 0 0 0 0 8.124Z" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10"/><path d="M17.875 3.25h-9.75A4.875 4.875 0 0 0 3.25 8.125v9.75a4.875 4.875 0 0 0 4.875 4.875h9.75a4.875 4.875 0 0 0 4.875-4.875v-9.75a4.875 4.875 0 0 0-4.875-4.875Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M18.281 8.938a1.219 1.219 0 1 0 0-2.438 1.219 1.219 0 0 0 0 2.438Z" fill="currentColor"/></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h26v26H0z"/></clipPath></defs></svg>
                 </a>
                 <!-- facebook -->
                 <a href="#" class="hover:scale-110 transition-transform">
@@ -487,156 +401,125 @@
               </div>
             </div>
           </div>
-          <div class="relative text-center text-white space-y-2 mt-5 z-10">
-            <h3 class="text-xl font-marcellus">José Antonio</h3>
+          <div class="relative text-center space-y-1 lg:space-y-2 mt-3 lg:mt-4 z-10">
+            <h4 class="text-base/5 lg:text-xl/6 font-marcellus pt-1">José Antonio</h4>
             <p>Professional Trainer</p>
           </div>
           <div class="absolute bottom-0 left-0 h-1/3 w-full bg-brand-lightBlack z-0"></div>
-        </div>
+        </div>         
       </div>
     </section>
 
-    <!-- gallery -->
-    <section class="overflow-hidden">
-      <div class="max-w-base mx-auto mt-28 space-y-4 px-4">
-        <div class="flex items-center gap-2">
-          <p class="text-amber-600 font-medium uppercase">Our Gallery</p>
-          <span class="w-16 h-0.5 bg-amber-600"></span>
+    <!-- Ability -->
+    <div class="max-w-5xl grid md:grid-cols-2 mx-auto text-sm gap-6 mt-8 md:mt-20 xl:mt-28 px-4">
+        <h2 class="font-montserrat font-semibold text-3xl lg:text-5xl xl:text-6xl text-brand-black md:pl-10 md:pt-6">Ability</h2>
+        <!-- 1 -->
+        <div class="feature-arrow bg-white rounded-3xl shadow-lg overflow-hidden skew-y-3 p-7 md:-ml-32 lg:-ml-24">
+          <p class="-skew-y-3">
+            <strong> Philosophy and Ethical Treatment of Horses</strong>
+            What sets José Antonio apart is not just his technical skill but also his profound respect and connection with horses. His ethical approach to horse training is reflected in the exceptional treatment he provides to his equine pupils. His empathy and understanding of the individual needs of each horse have earned him recognition as a trainer who seeks not only performance but also the well-being and happiness of his four-legged companions.
+          </p>
         </div>
-      </div>
-      <div data-aos="fade-up" data-aos-duration="2500"
-     class="relative mx-auto overflow-hidden w-full mt-10">
-        <div class="autoScroll-image-parent flex gap-4 xl:gap-7 w-[calc(316px*10)]">
-          <div class="w-52 xl:w-80 aspect-square transition ease-linear">
-            <img class="w-full h-full object-cover rounded-lg"
-              src="./image/portfolio-1.jpg" alt="">
-          </div>
-          <div class="w-52 xl:w-80 aspect-square transition ease-linear">
-            <img class="w-full h-full object-cover rounded-lg"
-              src="./image/portfolio-2.jpg" alt="">
-          </div>
-          <div class="w-52 xl:w-80 aspect-square transition ease-linear">
-            <img class="w-full h-full object-cover rounded-lg"
-              src="./image/portfolio-4.jpg" alt="">
-          </div>
-          <div class="w-52 xl:w-80 aspect-square transition ease-linear">
-            <img class="w-full h-full object-cover rounded-lg"
-              src="./image/portfolio-3.jpg" alt="">
-          </div>
-          <div class="w-52 xl:w-80 aspect-square transition ease-linear">
-            <img class="w-full h-full object-cover rounded-lg"
-              src="./image/portfolio-5.jpg" alt="">
-          </div>
-          <div class="w-52 xl:w-80 aspect-square transition ease-linear">
-            <img class="w-full h-full object-cover rounded-lg"
-              src="./image/portfolio-6.jpg" alt="">
-          </div>
-          <div class="w-52 xl:w-80 aspect-square transition ease-linear">
-            <img class="w-full h-full object-cover rounded-lg"
-              src="./image/portfolio-7.jpg" alt="">
-          </div>
-          <div class="w-52 xl:w-80 aspect-square transition ease-linear">
-            <img class="w-full h-full object-cover rounded-lg"
-              src="./image/portfolio-8.jpg" alt="">
-          </div>
+        <!-- 2 -->
+        <div class="feature-arrow bg-white rounded-3xl shadow-lg overflow-hidden skew-y-3 p-7">
+          <p class="-skew-y-3">
+            <strong> Contributions and Teaching</strong>
+            José Antonio's passion extends beyond competition. He has contributed to the equestrian world by conducting courses in Western dressage and teaching at the municipal riding school. Moreover, he has shared his extensive knowledge through specialized clinics, with a recent focus on working equitation.
+          </p>
         </div>
-      </div>
-    </section>
-    <!-- Love Horse -->
-    <section class="relative mt-28">
-      <div data-aos="fade-up" data-aos-duration="2500" class="relative max-w-4xl mx-auto text-center space-y-3 py-40 z-10">
-        <h2 class="font-inter text-4xl">
-         Love Horses ?
-        </h2>
-        <p class="text-gray-600">
-          Presently, José Antonio Olea Rodríguez manages an impressive riding school with 60 horses in Salteras. This space serves not only as a training center but also as a place for horse boarding and lessons. With two training arenas, it offers an optimal environment for the development and training of both riders and horses.
-        </p>
-        <form class="max-w-xl mx-auto flex items-stretch gap-4">
-          <input type="email" class="w-full rounded-md focus:outline-none px-4" placeholder="You email">
-          <button type="submit" class="btn-primary">Subscribe</button>
-        </form>
-      </div>
-      <div class="absolute left-0 top-0 w-full h-full z-0">
-        <img class="w-full h-full object-cover" src="./image/white-horse.jpg" alt="">
-      </div>
-    </section>
-    
+        <!-- 3 -->
+        <div class="feature-arrow bg-white rounded-3xl shadow-lg overflow-hidden skew-y-3 p-7">
+          <p class="-skew-y-3">
+            <strong> Current Facilities</strong>
+            Presently, José Antonio Olea Rodríguez manages an impressive riding school with 60 horses in Salteras. This space serves not only as a training center but also as a place for horse boarding and lessons. With two training arenas, it offers an optimal environment for the development and training of both riders and horses.
+          </p>
+        </div>
+    </div>
+
   </main>
-  <footer class="bg-brand-black py-20">
-    <div class="max-w-base mx-auto grid grid-cols-3 divide-x-2 divide-amber-600 gap-7 px-4">
-      <!--  logo-->
-      <div>
-        <a href="#" class="group inline-flex items-center text-white space-x-3">
-          <div class="w-16">
-            <img class="w-full h-full object-cover rounded-full" src="./image/logo.png" alt="Logo">
-          </div>
-          <span class="text-sm/4 group-hover:text-orange-400 transition-colors">José Antonia Olea</span>
-        </a>
-      </div>
-      <div class="text-white space-y-4 px-10">
-        <!-- location -->
-        <a href="#" class="flex items-start gap-2">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 shrink-0 text-amber-600">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
-            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
-          </svg>
-          <span>
-            C/Santa Elena no 8, Olivares, Sevilla, C.P. 41804
-          </span>          
-        </a>
-        <!-- email -->
-        <a href="mailto:j.a.olea@hotmail.com" class="flex items-center hover:opacity-70 transition-opacity gap-2">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6  h-6 text-amber-600">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
-          </svg>          
-          <span>
-            j.a.olea@hotmail.com
-          </span>          
-        </a>
-        <!-- tel-->
-        <a href="tel:666465744" class="flex items-center hover:opacity-70 transition-opacity gap-2">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-amber-600">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z" />
-          </svg>         
-          <span>
-            666 46 57 44
-          </span>          
-        </a>
-      </div>
-      <!-- social media -->
-      <div class="flex items-start text-amber-600 gap-5 pl-10">
-        <!-- instagram -->
-        <a href="https://www.instagram.com/joseantonioolearodriguez/?hl=en" class="hover:scale-110 transition-transform">
-          <svg width="26" height="26" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#a)"><path d="M13 17.063a4.062 4.062 0 1 0 0-8.125 4.062 4.062 0 0 0 0 8.124Z" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10"/><path d="M17.875 3.25h-9.75A4.875 4.875 0 0 0 3.25 8.125v9.75a4.875 4.875 0 0 0 4.875 4.875h9.75a4.875 4.875 0 0 0 4.875-4.875v-9.75a4.875 4.875 0 0 0-4.875-4.875Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M18.281 8.938a1.219 1.219 0 1 0 0-2.438 1.219 1.219 0 0 0 0 2.438Z" fill="currentColor"/></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h26v26H0z"/></clipPath></defs></svg>
-        </a>
-        <!-- facebook -->
-        <a href="#" class="hover:scale-110 transition-transform">
-          <svg width="26" height="26" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#a)" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M13 22.75c5.385 0 9.75-4.365 9.75-9.75S18.385 3.25 13 3.25 3.25 7.615 3.25 13s4.365 9.75 9.75 9.75Z"/><path d="M17.063 8.938h-1.625A2.437 2.437 0 0 0 13 11.374V22.75M9.75 14.625h6.5"/></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h26v26H0z"/></clipPath></defs></svg>
-        </a>
-        <!-- Linkedin -->
-        <a href="#" class="hover:scale-110 transition-transform">
-          <svg width="26" height="26" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#a)"><path d="M21.938 3.25H4.063a.813.813 0 0 0-.813.813v17.875c0 .448.364.812.813.812h17.875a.813.813 0 0 0 .812-.813V4.063a.813.813 0 0 0-.813-.812ZM12.188 11.375v6.5M8.938 11.375v6.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M12.188 14.219a2.844 2.844 0 1 1 5.687 0v3.656" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M8.938 9.75a1.219 1.219 0 1 0 0-2.437 1.219 1.219 0 0 0 0 2.437Z" fill="currentColor"/></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h26v26H0z"/></clipPath></defs></svg>
+  <footer class="mt-8 md:mt-20 xl:mt-28">
+    <div class="bg-brand-black py-10 lg:py-20">
+      <div class="max-w-base mx-auto grid md:grid-cols-3 md:divide-x-2 md:divide-amber-600 gap-5 md:gap-7 px-4">
+        <!--  logo-->
+        <div>
+          <a href="#" class="group inline-flex items-center text-white space-x-3">
+            <div class="w-16">
+              <img class="w-full h-full object-cover rounded-full" src="./image/logo.png" alt="Logo">
+            </div>
+            <span class="text-sm/4 group-hover:text-orange-400 transition-colors">José Antonia Olea</span>
+          </a>
+        </div>
+        <div class=" font-montserrat text-white space-y-4 md:px-5 xl:px-10">
+          <!-- location -->
+          <p class="flex items-start gap-2">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-7 h-7 shrink-0 text-amber-600">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
+            </svg>
+            <span>
+              C/Santa Elena no 8, Olivares, Sevilla, C.P. 41804
+            </span>          
+          </p>
+          <!-- email -->
+          <a href="mailto:j.a.olea@hotmail.com" class="flex items-center hover:text-amber-500 transition-colors gap-2">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6  h-6 text-amber-600">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
+            </svg>          
+            <span>
+              j.a.olea@hotmail.com
+            </span>          
+          </a>
+          <!-- tel-->
+          <a href="tel:666465744" class="flex items-center hover:text-amber-500 transition-colors gap-2">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-amber-600">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z" />
+            </svg>         
+            <span>
+              666 46 57 44
+            </span>          
+          </a>
+        </div>
+        <!-- social media -->
+        <div class="space-y-5 md:pl-5 xl:pl-10">
+          <div class="flex items-start text-amber-600 gap-3 lg:gap-5">
+            <!-- instagram -->
+            <a href="https://www.instagram.com/joseantonioolearodriguez/?hl=en" class="hover:scale-110 transition-transform">
+              <svg width="26" height="26" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#a)"><path d="M13 17.063a4.062 4.062 0 1 0 0-8.125 4.062 4.062 0 0 0 0 8.124Z" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10"/><path d="M17.875 3.25h-9.75A4.875 4.875 0 0 0 3.25 8.125v9.75a4.875 4.875 0 0 0 4.875 4.875h9.75a4.875 4.875 0 0 0 4.875-4.875v-9.75a4.875 4.875 0 0 0-4.875-4.875Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M18.281 8.938a1.219 1.219 0 1 0 0-2.438 1.219 1.219 0 0 0 0 2.438Z" fill="currentColor"/></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h26v26H0z"/></clipPath></defs></svg>
+            </a>
+            <!-- facebook -->
+            <a href="#" class="hover:scale-110 transition-transform">
+              <svg width="26" height="26" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#a)" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M13 22.75c5.385 0 9.75-4.365 9.75-9.75S18.385 3.25 13 3.25 3.25 7.615 3.25 13s4.365 9.75 9.75 9.75Z"/><path d="M17.063 8.938h-1.625A2.437 2.437 0 0 0 13 11.374V22.75M9.75 14.625h6.5"/></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h26v26H0z"/></clipPath></defs></svg>
+            </a>
+            <!-- Linkedin -->
+            <a href="#" class="hover:scale-110 transition-transform">
+              <svg width="26" height="26" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#a)"><path d="M21.938 3.25H4.063a.813.813 0 0 0-.813.813v17.875c0 .448.364.812.813.812h17.875a.813.813 0 0 0 .812-.813V4.063a.813.813 0 0 0-.813-.812ZM12.188 11.375v6.5M8.938 11.375v6.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M12.188 14.219a2.844 2.844 0 1 1 5.687 0v3.656" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M8.938 9.75a1.219 1.219 0 1 0 0-2.437 1.219 1.219 0 0 0 0 2.437Z" fill="currentColor"/></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h26v26H0z"/></clipPath></defs></svg>
 
-        </a>
-        <!-- twiter -->
-        <a href="#" class="hover:scale-110 transition-transform">
-          <svg width="26" height="26" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#a)"><path d="M8.938 17.875s-5.602-3.25-4.796-12.187c0 0 4.028 4.062 8.858 4.875V8.938c0-2.235 1.828-4.09 4.063-4.063a4.138 4.138 0 0 1 3.724 2.438h3.588l-3.25 3.25c-.433 6.788-6.102 12.187-13 12.187-3.25 0-4.063-1.218-4.063-1.218s3.25-1.22 4.875-3.657Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h26v26H0z"/></clipPath></defs></svg>
-        </a>
-        <!-- you tube -->
-        <a href="#" class="hover:scale-110 transition-transform">
-          <svg width="26" height="26" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#a)" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="m16.25 13-4.875-3.25v6.5L16.25 13Z"/><path d="M2.438 13c0 3.038.311 4.82.549 5.735a1.626 1.626 0 0 0 .974 1.112C7.365 21.161 13 21.125 13 21.125s5.635.036 9.04-1.278a1.625 1.625 0 0 0 .977-1.112c.238-.914.55-2.697.55-5.735 0-3.038-.312-4.82-.55-5.735a1.624 1.624 0 0 0-.978-1.117C18.635 4.84 13 4.875 13 4.875S7.365 4.84 3.96 6.153a1.625 1.625 0 0 0-.977 1.117c-.234.91-.546 2.692-.546 5.73Z"/></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h26v26H0z"/></clipPath></defs></svg>
-        </a>
+            </a>
+            <!-- twiter -->
+            <a href="#" class="hover:scale-110 transition-transform">
+              <svg width="26" height="26" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#a)"><path d="M8.938 17.875s-5.602-3.25-4.796-12.187c0 0 4.028 4.062 8.858 4.875V8.938c0-2.235 1.828-4.09 4.063-4.063a4.138 4.138 0 0 1 3.724 2.438h3.588l-3.25 3.25c-.433 6.788-6.102 12.187-13 12.187-3.25 0-4.063-1.218-4.063-1.218s3.25-1.22 4.875-3.657Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h26v26H0z"/></clipPath></defs></svg>
+            </a>
+            <!-- you tube -->
+            <a href="#" class="hover:scale-110 transition-transform">
+              <svg width="26" height="26" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#a)" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="m16.25 13-4.875-3.25v6.5L16.25 13Z"/><path d="M2.438 13c0 3.038.311 4.82.549 5.735a1.626 1.626 0 0 0 .974 1.112C7.365 21.161 13 21.125 13 21.125s5.635.036 9.04-1.278a1.625 1.625 0 0 0 .977-1.112c.238-.914.55-2.697.55-5.735 0-3.038-.312-4.82-.55-5.735a1.624 1.624 0 0 0-.978-1.117C18.635 4.84 13 4.875 13 4.875S7.365 4.84 3.96 6.153a1.625 1.625 0 0 0-.977 1.117c-.234.91-.546 2.692-.546 5.73Z"/></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h26v26H0z"/></clipPath></defs></svg>
+            </a>
+          </div>
+          <form class="flex items-stretch gap-4">
+            <input type="email" class="w-full rounded-md focus:outline-none px-4" placeholder="You email">
+            <button type="submit" class="btn-primary">Subscribe</button>
+          </form>
+        </div>  
       </div>
     </div>
+   <div class="bg-black">
+    <div class="max-w-base mx-auto flex items-center flex-wrap text-xs uppercase gap-5 lg:gap-7 py-3 px-4">
+      <p class="text-white">2024©. all rights reserved</p>  
+      <a href="#" class="text-amber-500 hover:text-white transition-colors">privacy policy</a>
+      <a href="#" class="text-amber-500 hover:text-white transition-colors">terms of use</a>
+    </div> 
+   </div>
   </footer>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-    window.addEventListener("scroll", () =>{
-      const header = document.querySelector('header');
-      header.classList.toggle("sticky", window.scrollY > 0);
-      // header.classList.toggle("fixed", window.scrollY < 0)
-    })
-  </script>
   <script src="./app.js"></script>
 </body>
 </html>

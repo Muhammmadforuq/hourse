@@ -1,5 +1,6 @@
 AOS.init();
 
+// mobile menu
 document.querySelectorAll('.toggleMenu').forEach(menuBtn =>{
   if(menuBtn){
     menuBtn.addEventListener('click', () =>{
@@ -8,25 +9,21 @@ document.querySelectorAll('.toggleMenu').forEach(menuBtn =>{
     })
   }
 })
-const itemHeaders = document.querySelectorAll(".accordion-item-header");
 
-itemHeaders.forEach((accordion) => {
-  accordion.addEventListener("click", collapseAccordions);
+// sticky navbar
+const header = document.querySelector('header')
 
-  function collapseAccordions() {
-    const activeAccordion = document.querySelector(".active");
-    if (activeAccordion && activeAccordion !== accordion) {
-      activeAccordion.classList.toggle("active");
-      activeAccordion.nextElementSibling.style.maxHeight = 0;
-    }
+  window.addEventListener('scroll', navFix )
 
-    accordion.classList.toggle("active");
-    const accordionItemBody = accordion.nextElementSibling;
-
-    if (accordion.classList.contains("active")) {
-      accordionItemBody.style.maxHeight = accordionItemBody.scrollHeight + "px";
-    } else {
-      accordionItemBody.style.maxHeight = 0;
+    function navFix (){
+    if (window.scrollY > header.offsetHeight ){
+        header.classList.remove('bg-transparent');
+        header.classList.add('bg-brand-black')
+    } else{
+        header.classList.add('bg-transparent');
+        header.classList.remove('bg-brand-black')
     }
   }
-});
+
+
+
